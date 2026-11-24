@@ -1,6 +1,7 @@
 
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
@@ -35,8 +36,7 @@ export default function Sidebar({
   isCollapsed,
   setIsCollapsed,
 }: SidebarProps) {
-  const pathname = usePathname();
-
+    const pathname = usePathname();
   return (
     <aside
       className={`fixed left-0 top-0 z-30 hidden h-screen border-r border-slate-200 bg-white p-4 transition-all duration-300 md:flex md:flex-col ${

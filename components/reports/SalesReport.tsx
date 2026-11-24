@@ -34,7 +34,12 @@ export default function SalesReport() {
             <XAxis dataKey="month" />
             <YAxis />
             <Tooltip />
-            <Bar dataKey="sales" fill="#2563eb" radius={[6, 6, 0, 0]} />
+            <Bar
+              dataKey="sales"
+              fill="#2563eb"
+              radius={[6, 6, 0, 0]}
+              barSize={60}
+            />
           </BarChart>
         </ResponsiveContainer>
       </div>
