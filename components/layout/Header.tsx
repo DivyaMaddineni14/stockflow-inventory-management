@@ -5,10 +5,10 @@ import { Search, Bell } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-slate-200 bg-white px-5 md:px-8">
+    <header className="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-slate-200 bg-white pl-16 pr-5 md:px-8">
 
       {/* Welcome */}
-      <div>
+      <div className="min-w-0">
         <h2 className="text-sm font-semibold text-slate-800">
           Welcome back, Admin 👋
         </h2>
@@ -17,7 +17,7 @@ export default function Header() {
         </p>
       </div>
 
-      <div className="flex items-center gap-3">
+      <div className="flex shrink-0 items-center gap-3">
 
         {/* Search */}
         <div className="hidden items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 sm:flex">
@@ -44,4 +44,3 @@ export default function Header() {
     </header>
   );
 }
-
